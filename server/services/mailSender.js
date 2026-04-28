@@ -16,7 +16,7 @@ export const mailSender = async(email, otp, otp_type) =>{
 
     htmlContent = await inlinecss(htmlContent, options);
 
-    try{    
+    try{
         let transporter = nodemailer.createTransport({
             host: process.env.MAIL_HOST,
             port: process.env.MAIL_PORT,
